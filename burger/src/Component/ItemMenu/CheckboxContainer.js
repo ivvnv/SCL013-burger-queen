@@ -1,4 +1,3 @@
-
 import React from 'react';
 import data from "../../Data/menu.json";
 import Checkbox from './Checkbox';

@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react'
-import './OptionsModal.css'
 import {Modal, Button} from 'react-bootstrap'
 import Checkbox from './Checkbox';
 import data from "../../Data/menu.json";
@@ -26,7 +25,7 @@ export class OptionsModal extends Component {
       centered>
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Elegir <b>proteína</b> y/o <b>extras</b>:
+          Elegir <b>tipo de hamburguesa</b> y/o <b>extras</b>:
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
