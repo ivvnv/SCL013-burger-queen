@@ -5,7 +5,6 @@ import data from "../../Data/menu.json";
 import CheckboxContainer from './CheckboxContainer';
 
 export class OptionsModal extends Component {
-  // eslint-disable-next-line
   constructor(props) {
     super(props);
     this.state = {
@@ -13,7 +12,6 @@ export class OptionsModal extends Component {
     };
   
   }
-
   render () {
     const { label } = this.props;
     const { isChecked } = this.state;
@@ -30,9 +28,9 @@ export class OptionsModal extends Component {
       </Modal.Header>
       <Modal.Body>
         
-      <div className="container">
+      {/* <div className="container">
         <CheckboxContainer />
-      </div>
+      </div> */}
 
       </Modal.Body>
       <Modal.Footer>
