@@ -5,15 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
 class Executingorder extends Component {
-  
+
    // Envia indice a eliminar
   deleteItem = (i) => {this.props.deleteItem(i)}
 
   render() {
-    
     return (
       <div className="Executingorder container">
-        
         <table className="table table-hover">
           <thead className='tableHead'>
             <tr>
@@ -34,7 +32,7 @@ class Executingorder extends Component {
                <td className='aaa table-light'>1</td>
                <td className='aaa table-light'>{item.price}</td>
              </tr>
-              )})}
+               )})}
          </tbody>
         </table>
       </div>
