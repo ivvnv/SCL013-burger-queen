@@ -35,12 +35,11 @@ class Cocina extends Component {
           {this.state.orders &&
             this.state.orders.map( comanda => {
               return (
-                <div>
-                  <p>{comanda.nfactura}</p>
-                  <p>Mesa {comanda.table}</p>
-                  <p>
-                    Pedido:{" "}
-                    {comanda.order.map((pedido) => {
+                <div className='box-order'>
+                  <span className='title-box'>Nº de pedido #{comanda.nfactura}    </span>
+                  <span className='title-table'> Mesa {comanda.table}</span>
+                  <p className='order-content'>
+                    <b>Pedido:</b> {comanda.order.map((pedido) => {
                       return pedido.name;
                     })}
                   </p>
